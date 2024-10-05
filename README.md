@@ -410,4 +410,10 @@ Esto asegura que no se puedan registrar estudiantes con el mismo código y garan
 ![ ](https://github.com/Yovanygt/imagenes/blob/main/10_2%20guardar%20estudiante.png?raw=true)
 
 ![ ](https://github.com/Yovanygt/imagenes/blob/main/10_3%20boton%20guardar%20estudiante.png?raw=true)
+
+### No se puede repetir:
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/10_4%20codigo%20ya%20existe%20registro%20estudiante.png?raw=true)
+
+
  
