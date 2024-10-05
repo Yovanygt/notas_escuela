@@ -463,4 +463,44 @@ Este proceso asegura que las notas ingresadas cumplan con los criterios establec
 
 ![ ](https://github.com/Yovanygt/imagenes/blob/main/11_3%20seleccion%20bimestre.png?raw=true)
 
+
+## Datos de Pruebas
+
+### Proceso de Validación de Notas:
+El sistema permite validar las notas de un estudiante previamente registrado en la base de datos. A continuación, se detallan las validaciones y el proceso paso a paso:
+
+1. **Selección del Estudiante**:  
+   El usuario selecciona un estudiante del **ComboBox** que contiene una lista de todos los estudiantes registrados, mostrando su código y nombre.
+
+2. **Consulta de Notas**:  
+   Al hacer clic en el botón **"Validar Notas"**, el sistema recupera las notas del estudiante seleccionado desde la base de datos. Las notas se consultan por **bimestre** y se muestran en el área de texto.
+
+3. **Cálculo del Promedio**:  
+   Se calcula el promedio de las notas obtenidas en todos los bimestres disponibles para ese estudiante. El promedio es calculado sumando todas las notas y dividiendo entre el número total de bimestres.
+
+4. **Determinación del Resultado**:  
+   - Si el **promedio** es igual o superior a **60**, el sistema muestra el mensaje **"Resultado: Aprobado"**.
+   - Si el promedio es inferior a **60**, el sistema muestra el mensaje **"Resultado: Reprobado"**.
+
+5. **No se Encontraron Notas**:  
+   Si el estudiante no tiene notas registradas, el sistema mostrará el mensaje **"No se encontraron notas para este estudiante."**
+
+### Ejemplo:
+1. El usuario selecciona el estudiante con código `EST001 - Luis García`.
+2. El sistema consulta las notas en la base de datos y muestra lo siguiente:
+   - **Bimestre 1**: 85
+   - **Bimestre 2**: 90
+   - **Bimestre 3**: 88
+   - **Bimestre 4**: 92
+   - **Promedio**: 88.75
+   - **Resultado**: Aprobado
+
+Este proceso asegura que las notas de un estudiante se validen correctamente, mostrando un promedio acumulado y determinando si el estudiante aprueba o reprueba con base en sus calificaciones.
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/12_1%20validar%20notas.png?raw=true)
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/12_2%20boron%20validar%20notas.png?raw=true)
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/12_3%20base%20de%20datos%20notas.png?raw=true)
+
  
