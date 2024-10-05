@@ -377,7 +377,37 @@ public class ValidacionNotas extends JFrame {
 
 ```
 
-### Datos de Prueba
+## Datos de Pruebas
+
+Al ingresar un estudiante en el sistema, se requiere proporcionar los siguientes datos:
+
+- **Código**: Un identificador único para cada estudiante. Este campo es obligatorio y no puede repetirse.
+- **Nombre**: El nombre completo del estudiante.
+- **Grado**: El grado al que pertenece el estudiante (seleccionado de una lista desplegable).
+
+### Proceso de Ingreso:
+1. El usuario ingresa el **código** del estudiante.
+2. El usuario ingresa el **nombre** del estudiante.
+3. El usuario selecciona el **grado** al que pertenece el estudiante.
+4. Una vez que todos los datos han sido ingresados, el formulario permite guardar la información.
+5. El sistema verifica que el **código** no se haya ingresado previamente. Si el código ya existe, se muestra un mensaje de error indicando que el código no puede repetirse.
+
+### Ejemplo:
+- Código: `EST001`
+- Nombre: `Luis García`
+- Grado: `5to Primaria`
+
+Si el código `EST001` ya ha sido registrado previamente, el sistema mostrará el siguiente mensaje:  
+**"El código de estudiante ya existe. Por favor, use otro código."**
+
+Esto asegura que no se puedan registrar estudiantes con el mismo código y garantiza la unicidad de los registros.
+
 
 ![ ](https://github.com/Yovanygt/imagenes/blob/main/10_2%20guardar%20estudiante.png?raw=true)
+
+### se guarda el estudiante:
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/10_2%20guardar%20estudiante.png?raw=true)
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/10_3%20boton%20guardar%20estudiante.png?raw=true)
  
