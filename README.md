@@ -13,7 +13,16 @@
 
 ## Descripción
 
-Este proyecto permite gestionar estudiantes, notas y validar resultados académicos. Proporciona formularios para registrar estudiantes, ingresar notas y verificar los resultados de los estudiantes.
+Este proyecto, desarrollado en **Java**, utiliza **MariaDB** como sistema de gestión de bases de datos para permitir la gestión eficiente de estudiantes y sus respectivas notas. Las funcionalidades principales incluyen:
+
+- **Registro de Estudiantes**: A través de un formulario, los administradores pueden ingresar los datos de los estudiantes, asegurándose de que no existan códigos duplicados para cada registro. Se incluyen campos para el código, nombre y grado del estudiante.
+
+- **Ingreso de Notas**: Se proporciona un formulario que permite registrar las notas de los estudiantes por bimestre. Este sistema asegura que las notas estén dentro del rango permitido y almacena la información asociada a cada estudiante.
+
+- **Validación de Notas**: Se implementa una funcionalidad para validar las notas ingresadas. Al seleccionar un estudiante, el sistema calcula el promedio de sus notas y determina si ha aprobado o reprobado, brindando retroalimentación inmediata.
+
+Este enfoque no solo simplifica la gestión de datos académicos, sino que también permite un seguimiento eficaz del rendimiento de los estudiantes a lo largo del año escolar.
+
 
 ## Código Fuente
 
