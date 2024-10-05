@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Proyecto11/src"/>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/caffeine-3.1.8.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/checker-qual-3.43.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/error_prone_annotations-2.21.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/jcl-over-slf4j-2.0.13.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/jna-5.14.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/jna-platform-5.14.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/slf4j-api-2.0.13.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/librerias/waffle-jna-3.4.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Yovany/OneDrive - INTECAP/escritorio/mariadb/mariadb-java-client-3.4.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="Proyecto11/bin"/>
+</classpath>
