@@ -20,7 +20,8 @@ Este proyecto permite gestionar estudiantes, notas y validar resultados académi
 ## Código Fuente
 
 ### Formulario Estudiantes
-```bash
+
+```java
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
@@ -133,16 +134,7 @@ public class FormularioEstudiantes extends JFrame {
         return false; // Si no hay coincidencias, el código no existe
     }
 
-## Código Fuente
-
     public static void main(String[] args) {
         new FormularioEstudiantes();
     }
 }
-
-
-
-
-
-
-
