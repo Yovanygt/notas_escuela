@@ -434,8 +434,8 @@ Al ingresar las notas de los estudiantes, se requiere proporcionar los siguiente
 - **Nota**: El valor numérico de la calificación (debe estar entre 0 y 100).
 
 ### Proceso de Ingreso de Notas:
-1. El usuario ingresa el **código del estudiante** para identificar al alumno.
-2. El usuario selecciona la **materia** de un menú desplegable o introduce el nombre de la asignatura.
+1. El usuario valida  **código del estudiante** para identificar al alumno.
+2. El usuario ingresa la **materia** 
 3. El usuario selecciona el **bimestre** al que corresponde la nota (por ejemplo, Primer Bimestre, Segundo Bimestre).
 4. El usuario ingresa la **nota** obtenida por el estudiante en la materia seleccionada.
 5. Al intentar guardar la nota, el sistema valida que:
@@ -445,7 +445,7 @@ Al ingresar las notas de los estudiantes, se requiere proporcionar los siguiente
 7. Si la nota está fuera de rango, se muestra un mensaje de error, y el proceso de guardado es cancelado.
 
 ### Ejemplo:
-- Código del Estudiante: `EST002`
+- Código del Estudiante: `6 Mauricio`
 - Materia: `Matemáticas`
 - Bimestre: `Primer Bimestre`
 - Nota: `90`
@@ -457,5 +457,10 @@ Este proceso asegura que las notas ingresadas cumplan con los criterios establec
 
 ### Ejemplo:
 
+![ ](https://github.com/Yovanygt/imagenes/blob/main/11_1%20ingresar%20notas.png?raw=true)
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/11_2%20boton%20guardar.png?raw=true)
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/11_3%20seleccion%20bimestre.png?raw=true)
 
  
