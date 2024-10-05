@@ -9,9 +9,7 @@
 - [Datos de Pruebas](#datos-de-pruebas)
 - [Capturas de Pantalla](#capturas-de-pantalla)
 - [Documentación](#documentación)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
-- [Enlace Externo](#enlace-externo)
+
 
 ## Descripción
 
