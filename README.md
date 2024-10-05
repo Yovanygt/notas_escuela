@@ -379,5 +379,5 @@ public class ValidacionNotas extends JFrame {
 
 ### Datos de Prueba
 ```java
-![ ](https://github.com/Yovanygt/imagenes/blob/main/10_2%20guardar%20estudiante.png)
+![ ](https://github.com/Yovanygt/imagenes/blob/main/10_2%20guardar%20estudiante.png?raw=true)
  
