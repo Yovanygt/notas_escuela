@@ -503,4 +503,97 @@ Este proceso asegura que las notas de un estudiante se validen correctamente, mo
 
 ![ ](https://github.com/Yovanygt/imagenes/blob/main/12_3%20base%20de%20datos%20notas.png?raw=true)
 
+## Documentación
+
+### 1. Descripción del Proyecto
+El **Sistema de Gestión Escolar** permite a los usuarios gestionar la información de los estudiantes, registrar notas y validar los resultados académicos. El sistema se desarrolla en Java utilizando **Swing** para la interfaz gráfica y **MariaDB** como base de datos. A través de formularios, los usuarios pueden realizar las siguientes acciones:
+- Registrar estudiantes en la base de datos.
+- Registrar notas por materia y bimestre.
+- Validar las notas para calcular el promedio y determinar si el estudiante aprueba o reprueba.
+
+### 2. Estructura del Proyecto
+El proyecto está dividido en diferentes formularios para manejar estudiantes y notas:
+
+- **Formulario de Estudiantes**: Permite registrar nuevos estudiantes y evitar la duplicación de códigos.
+- **Formulario de Notas**: Permite ingresar notas por materia y bimestre.
+- **Validación de Notas**: Permite consultar y validar las notas de un estudiante, mostrando el promedio y el resultado final (aprobado o reprobado).
+
+### 3. Funcionalidades Principales
+
+#### a. Registro de Estudiantes:
+- Se ingresan el **código**, **nombre** y **grado** del estudiante.
+- Se verifica que el código no esté duplicado.
+- Los datos del estudiante se almacenan en la base de datos.
+
+#### b. Registro de Notas:
+- Se selecciona el **código del estudiante**, **materia**, **bimestre**, y **nota**.
+- Se valida que la **nota** esté dentro del rango permitido (0 - 100).
+- La nota se guarda en la base de datos si todas las validaciones son correctas.
+
+#### c. Validación de Notas:
+- Se selecciona el estudiante y el sistema muestra las notas registradas por bimestre.
+- Se calcula el **promedio** de las notas y se determina si el estudiante **aprueba** o **reprueba**.
+- Si no hay notas registradas, se informa al usuario.
+
+### 4. Arquitectura del Sistema
+El sistema utiliza una arquitectura en capas, donde la interfaz gráfica está separada de la lógica de negocio y el acceso a la base de datos.
+
+- **Capa de Presentación**: Formularios desarrollados con **Java Swing**.
+- **Capa de Lógica**: Métodos que gestionan la validación de datos y cálculos como el promedio de notas.
+- **Capa de Persistencia**: Conexión y consultas a la base de datos **MariaDB**.
+
+### 5. Base de Datos
+El sistema se conecta a una base de datos **MariaDB** donde se almacenan las siguientes tablas:
+
+- **Estudiantes**: Contiene información del estudiante, como código, nombre, y grado.
+- **Notas**: Contiene las calificaciones de los estudiantes por materia y bimestre.
+
+#### Estructura de la Tabla `estudiante`:
+| Campo      | Tipo        | Descripción                              |
+|------------|-------------|------------------------------------------|
+| `id`       | INT         | Identificador único del estudiante       |
+| `codigo`   | VARCHAR(10) | Código del estudiante                    |
+| `nombre`   | VARCHAR(100)| Nombre completo del estudiante           |
+| `grado_id` | INT         | Identificador del grado del estudiante   |
+
+#### Estructura de la Tabla `notas`:
+| Campo          | Tipo        | Descripción                              |
+|----------------|-------------|------------------------------------------|
+| `id`           | INT         | Identificador único de la nota           |
+| `estudiante_id`| INT         | Identificador del estudiante             |
+| `bimestre`     | INT         | Bimestre (1, 2, 3, o 4)                  |
+| `materia`      | VARCHAR(100)| Nombre de la asignatura                  |
+| `nota`         | FLOAT       | Nota obtenida                            |
+
+### 6. Requerimientos del Sistema
+- **Java 8** o superior.
+- **MariaDB** instalado y configurado.
+- **Conector JDBC** para la base de datos.
+
+### 7. Instrucciones de Uso
+
+1. **Configurar la Base de Datos**:  
+   Asegúrate de tener la base de datos **MariaDB** instalada y configurada. Crea las tablas necesarias según la estructura descrita.
+   
+2. **Ejecución del Proyecto**:  
+   - Importa el proyecto en un entorno de desarrollo como **Eclipse** o **IntelliJ**.
+   - Asegúrate de tener el **Conector JDBC** en el classpath.
+   - Configura las credenciales de la base de datos en el código (`localhost`, `puerto`, `usuario`, `contraseña`).
+   - Ejecuta la aplicación.
+
+### 8. Validaciones Implementadas
+- **Código de Estudiante Único**: Se valida que no haya duplicación de códigos al registrar un nuevo estudiante.
+- **Rango de Notas**: Se asegura que las notas ingresadas estén entre 0 y 100.
+- **Validación de Bimestres**: Se evita la duplicación de notas para un mismo bimestre en la misma materia.
+- **Promedio de Notas**: Se calcula el promedio de las notas de un estudiante, determinando si aprueba o reprueba.
+
+### 9. Diagrama de Clases
+El diagrama de clases sigue el enfoque de **POO (Programación Orientada a Objetos)**, donde las clases `Estudiante`, `Nota`, y `Grado` representan las entidades principales, y la clase `ValidacionNotas` maneja la lógica para validar los resultados académicos.
+
+![ ](https://github.com/Yovanygt/imagenes/blob/main/10_1.png?raw=true)
+
+### 10. Conclusión
+Este sistema de gestión escolar es una herramienta eficiente para manejar la información académica de los estudiantes, garantizando la correcta validación y registro de notas, proporcionando resultados confiables y automatizando la gestión educativa.
+
+
  
