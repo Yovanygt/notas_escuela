@@ -65,7 +65,7 @@ public class FormularioEstudiantes extends JFrame {
 
         setVisible(true);
     }
-
+//comentario 14-03-2025
     private void cargarGrados() {
         List<Grado> grados = new ArrayList<>();
         try (Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3307/escuela", "root", "1234");
